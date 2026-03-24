@@ -1,0 +1,30 @@
+<footer role="contentinfo" class="layout" data-layout="tirana">
+
+<div>
+
+<div id="footer-logo">
+<a href="#{{ site.siteID }}" title="Top">{% include "partials/logo-footer.svg" %}<span data-visibility="hidden">{{ site.name }}</span></a>
+</div><!-- footer-logo -->
+
+<ul class="alt-nav">
+{% for item in footer_navigation.items %}
+<li><a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+{% endfor %}
+</ul>
+
+<small>&#169; {{ global.currentYear() }}&#8211;now. {{ site.copyrightOwner or site.name }}. All Rights Reserved</small>
+<small class="alt-credit" ><a href="https://stuffandnonsense.co.uk">Website design by Stuff &#38; Nonsense</a></small>
+
+<ul class="alt-social">
+
+<li><a href="https://www.instagram.com/_begopereda/" target="_blank" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" class="icon-social"><g fill="none" fill-rule="evenodd"><rect width="32" height="32" fill="#2d7187" rx="16" class="icon-base" /><path fill="#fff" d="M24.099 9.69a1.714 1.714 0 1 1 0-3.428 1.714 1.714 0 0 1 0 3.428m-7.909.101a6.399 6.399 0 1 0 0 12.799 6.399 6.399 0 0 0 0-12.799"/></g></svg></a> <span data-visibility="hidden">Instagram</span></li>
+
+<li><a href="https://soundcloud.com/bpereda" target="_blank" title="Soundcloud"><svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" class="icon-social"><g fill="none" fill-rule="evenodd"><rect width="32" height="32" fill="#2d7187" rx="16" class="icon-base" /><path fill="#fff" d="M26 16.757c0 2.142-1.297 3.878-2.897 3.878h-7.24c-.267 0-.483-.29-.483-.646v-9.665c0-.214.078-.418.217-.527 1.156-.905 2.559-1.047 3.803-.385 1.244.663 2.19 2.056 2.566 3.776.895-.512 1.922-.387 2.734.331s1.3 1.935 1.3 3.238M13.449 9.971c.399 0 .723.434.723.968v9.05c.011.356-.124.692-.353.874a.57.57 0 0 1-.742 0c-.228-.182-.364-.518-.353-.874v-9.05c0-.534.325-.968.725-.968m-4.426 3.555c-.016-.52-.335-.929-.723-.929-.389 0-.708.41-.724.929v6.463c.016.519.335.928.724.928s.707-.41.723-.928zm1.85.323c.401 0 .725.434.725.968v5.172c0 .535-.324.97-.724.97s-.725-.435-.725-.97v-5.172c0-.534.325-.968.725-.968m-5.148.645c.4 0 .723.436.723.97v3.233c.012.356-.124.692-.352.875a.57.57 0 0 1-.743 0c-.228-.183-.364-.519-.352-.875v-3.233c0-.536.324-.97.724-.97"/></g></svg></a> <span data-visibility="hidden">Soundcloud</span></li>
+
+<li><a href="https://www.youtube.com/@_begopereda" target="_blank" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" class="icon-social"><g fill="none" fill-rule="evenodd"><rect width="32" height="32" fill="#2d7187" rx="16" class="icon-base" /><path fill="#fff" d="M13.907 10.221c-.975-.612-2.267.122-2.24 1.273v9.593c0 1.127 1.24 1.866 2.229 1.295l.002-.002 8.228-4.8h.002c.967-.568.967-1.996 0-2.563l-.002-.001z"/>
+</g></svg></a> <span data-visibility="hidden">YouTube</span></li>
+</ul>
+
+</div><!-- one -->
+
+</footer>

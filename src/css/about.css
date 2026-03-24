@@ -1,0 +1,55 @@
+@font-face {
+font-display: swap;
+font-family: 'sunset-script';
+font-style: normal;
+font-weight: normal;
+src: url('/fonts/sunset-script.woff2') format('woff2'); }
+
+/* ============= ABOUT CASSETTE ANIMATION ========== */
+
+.cassette-tape {
+animation: shift-cassette-tape 24s linear forwards; }
+
+.cassette-stack .cassette-drop {
+animation: drop-cassette 1.5s cubic-bezier(.22, 1, .36, 1) both;
+opacity: 0;
+transform: translateY(-2000px); }
+
+.cassette-stack .cassette-drop-4 {
+animation-delay: 0s; }
+
+.cassette-stack .cassette-drop-3 {
+animation-delay: .18s; }
+
+.cassette-stack .cassette-drop-2 {
+animation-delay: .36s; }
+
+.cassette-stack .cassette-drop-1 {
+animation-delay: .54s; }
+
+.cassette-spool {
+animation: spin-spool-until-stop 24s linear forwards;
+transform-box: fill-box;
+transform-origin: center center; }
+
+@keyframes spin-spool-until-stop {
+to {
+transform: rotate(2880deg); } }
+
+@keyframes drop-cassette {
+0% {
+opacity: 0;
+transform: translateY(-2000px); }
+
+100% {
+opacity: 1;
+transform: translateY(0); } }
+
+@keyframes shift-cassette-tape {
+to {
+transform: translateX(-200px); } }
+
+@media (prefers-reduced-motion: reduce) {
+.cassette-stack .cassette-drop {
+opacity: 1;
+transform: translateY(0) !important; } }

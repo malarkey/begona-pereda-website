@@ -1,0 +1,96 @@
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "partials/head.html" %}
+
+<body id="{{ site.siteID }}">
+
+<div class="layout" data-layout="edinburgh" data-theme="reversed">
+
+<div>
+
+<div class="alt-intro">
+
+<nav>
+<ul>
+{% for item in navigation.items %}
+<li><a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+{% endfor %}
+</ul>
+</nav>
+
+<h1 data-visibility="hidden">{{ title }}</h1>
+
+<div id="banner-logo">
+<a href="/" aria-label="{{ site.name }}" title="Home">{% include "partials/logo-banner.svg" %}<span data-visibility="hidden">{{ site.name }}</span></a>
+</div><!-- banner-logo -->
+
+<div class="intro-content">
+{{ content | safe }}
+
+</div><!-- intro-content -->
+
+</div><!-- intro -->
+
+</div><!-- one -->
+
+<div>
+{% include "partials/img-about-small.svg" %}
+{% include "partials/img-about.svg" %}
+</div><!-- two -->
+
+</div><!-- layout -->
+
+
+
+<div class="layout" data-layout="warsaw">
+
+<div>
+<h2 class="alt-headline">About my work</h2>
+</div><!-- one -->
+
+<div>
+{% if work %}
+<div class="alt-columns">
+{{ work | markdown | safe }}
+</div><!-- columns -->
+{% endif %}
+</div><!-- two -->
+
+</div><!-- layout -->
+
+
+
+<hr data-function="spacer" id="showreel">
+
+<div class="layout" data-layout="warsaw">
+
+<div>
+<h2 class="alt-headline">Watch my showreel</h2>
+</div><!-- one -->
+
+<div>
+<div class="embed-container">
+<iframe
+src="https://www.youtube.com/embed/SCbwQTlQ0Vs"
+title="Begoña Pereda showreel"
+loading="lazy"
+frameborder="0"
+allowfullscreen
+></iframe>
+</div><!-- embed-container -->
+</div><!-- two -->
+
+</div><!-- layout -->
+
+
+<div data-bg="footer-stripe-v">
+{% include "partials/footer.html" %}
+</div><!-- data-bg -->
+
+<script src="{{ site.url }}/js/scripts.js"></script>
+</body>
+
+</html>

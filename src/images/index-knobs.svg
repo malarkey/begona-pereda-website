@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1365 1285">
+
+<g id="index-layer-knobs" fill="none" fill-rule="evenodd">
+
+<g id="index-knob-4" transform="translate(1248.71 967.355)">
+<circle cx="48.387" cy="48.387" r="48.387" fill="#edf4f8"/>
+<circle cx="48.5" cy="88.5" r="3.5" fill="#2d7187"/>
+<circle cx="48.387" cy="48.387" r="24.194" fill="#c8deea"/>
+</g>
+
+<g id="index-knob-3" transform="translate(1134.516 1068.968)">
+<circle cx="48.387" cy="48.387" r="48.387" fill="#edf4f8"/>
+<circle cx="48.194" cy="48.194" r="24.194" fill="#c8deea"/>
+<circle cx="48.5" cy="8.5" r="3.5" fill="#2d7187"/>
+</g>
+
+<g id="index-knob-2" transform="translate(453.226 967.355)">
+<circle cx="60.968" cy="60.968" r="60.968" fill="#edf4f8"/>
+<circle cx="60.774" cy="60.645" r="49" fill="#c8deea"/>
+</g>
+
+<g id="index-knob-1" transform="translate(265.484 978)">
+<circle cx="43.548" cy="43.548" r="43.548" fill="#edf4f8"/>
+<circle cx="44.016" cy="43.5" r="25.5" fill="#c8deea"/>
+<circle cx="43.5" cy="8.5" r="3.5" fill="#2d7187"/>
+</g>
+
+</g>
+</svg>

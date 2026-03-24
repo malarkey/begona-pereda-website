@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 340">
+<g fill="none" fill-rule="evenodd">
+<path class="stripe-colour-1" fill="#5ea085" d="M0 340v-60h100v60z"/>
+<path class="stripe-colour-2" fill="#91bda0" d="M0 270v-60h100v60z"/>
+<path class="stripe-colour-3" fill="#efc675" d="M0 200v-60h100v60z"/>
+<path class="stripe-colour-4" fill="#272f2a" d="M0 130V70h100v60z"/>
+<path class="stripe-colour-5" fill="#eb5b3d" d="M0 60V0h100v60z"/>
+</g>
+</svg>

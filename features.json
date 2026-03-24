@@ -1,0 +1,6 @@
+{
+  "blog": true,
+  "faqs": false,
+  "portfolio": true,
+  "team": false
+}

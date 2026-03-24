@@ -1,0 +1,6 @@
+{% for item in postListItems %}
+<article class="item-post">
+<h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+<p data-size="s">{{ item.data.postSummary }}</p>
+</article>
+{% endfor %}

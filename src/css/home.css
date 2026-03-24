@@ -1,0 +1,233 @@
+@font-face {
+font-display: swap;
+font-family: 'technology';
+font-style: normal;
+font-weight: normal;
+src: url('/fonts/technology.woff2') format('woff2'); }
+
+/* ============= INDEX REEL-TO-REEL ANIMATION ========== */
+
+#index-player #index-layer-reel-left,
+#index-player #index-layer-reel-right .index-reel-spin,
+#index-player #index-tape-left,
+#index-player #index-tape-right,
+#index-player #index-knob-1 .index-knob-spin,
+#index-player #index-knob-2 .index-knob-spin,
+#index-player #index-knob-3 .index-knob-spin,
+#index-player #index-knob-4 .index-knob-spin,
+#index-player #index-layer-display text,
+#index-player #index-layer-display tspan {
+animation-play-state: paused; }
+
+#index-player.is-playing #index-layer-reel-left,
+#index-player.is-playing #index-layer-reel-right .index-reel-spin,
+#index-player.is-playing #index-tape-left,
+#index-player.is-playing #index-tape-right,
+#index-player.is-playing #index-knob-1 .index-knob-spin,
+#index-player.is-playing #index-knob-2 .index-knob-spin,
+#index-player.is-playing #index-knob-3 .index-knob-spin,
+#index-player.is-playing #index-knob-4 .index-knob-spin,
+#index-player.is-playing #index-layer-display text,
+#index-player.is-playing #index-layer-display tspan {
+animation-play-state: running; }
+
+#index-player {
+position: relative; }
+
+#index-player-controls {
+position: absolute;
+bottom: 10px;
+left: calc(var(--spacing-l) + 8%); }
+
+#index-player-controls p {
+align-items: center;
+color: var(--color-text-alt);
+display: flex;
+font-size: var(--font-size-s);
+gap: var(--spacing-r);
+justify-content: center;
+text-transform: uppercase; }
+
+#index-player-controls p::before,
+#index-player-controls p::after {
+background-color: var(--color-text-alt);
+content: "";
+flex: 1;
+block-size: var(--border-width-r); }
+
+.index-player-buttons {
+display: grid;
+gap: 5px;
+grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+.index-player-buttons button {
+background-color: oklch(88.79% 0.0288 231.48);
+border: 0;
+border-radius: 0;
+box-shadow: 0 2px 0 oklch(40.88% 0.0586 222.58);
+color: oklch(25.90% 0.0151 340.31);
+cursor: pointer;
+font-family: var(--font-family-default);
+font-size: 12px;
+line-height: 1;
+padding: 5px 10px;
+text-align: center; }
+
+.index-player-buttons button:hover {
+background-color: oklch(100.00% 0.0000 89.88); }
+
+.index-player-buttons button[aria-pressed="true"] {
+background-color: oklch(58.45% 0.1486 19.33);
+box-shadow: 0 -2px 0 oklch(46.47% 0.1168 17.95);
+color: var(--color-text-alt); }
+
+#index-player-audio {
+display: none; }
+
+#index-layer-reel-left,
+#index-layer-reel-right .index-reel-spin,
+#index-tape-left,
+#index-tape-right,
+#index-knob-1 .index-knob-spin,
+#index-knob-2 .index-knob-spin,
+#index-knob-3 .index-knob-spin,
+#index-knob-4 .index-knob-spin {
+transform-box: fill-box;
+transform-origin: center center; }
+
+#index-layer-reel-left {
+animation: spin-reel 9s linear infinite; }
+
+#index-layer-reel-right .index-reel-spin {
+animation: spin-reel 9s linear infinite; }
+
+#index-tape-left {
+animation: tape-left-transfer 60s linear infinite alternate; }
+
+#index-tape-right {
+animation: tape-right-transfer 60s linear infinite alternate; }
+
+#index-knob-1 .index-knob-spin {
+animation: spin-knob 2.8s linear infinite; }
+
+#index-knob-2 .index-knob-spin {
+animation: spin-knob 3.4s linear infinite reverse; }
+
+#index-knob-3 .index-knob-spin {
+animation: spin-knob 2.2s linear infinite; }
+
+#index-knob-4 .index-knob-spin {
+animation: spin-knob 2.6s linear infinite reverse; }
+
+#index-layer-base .index-easter-egg {
+animation: pulse-index-easter-egg 1.2s ease-in-out infinite;
+cursor: pointer; }
+
+#index-layer-display text,
+#index-layer-display tspan {
+animation: blink-display 1.1s steps(1, end) infinite;
+font-family: "technology";
+font-size: 48px; }
+
+[data-theme="dark"] .index-base-light {
+fill: oklch(44.97% 0.0293 341.12); }
+
+[data-theme="dark"] .index-base-mid {
+fill: oklch(35.76% 0.0225 340.86); }
+
+[data-theme="dark"] .index-base-dark {
+fill: oklch(31.05% 0.0177 341.48); }
+
+[data-theme="dark"] .index-button-shadow circle {
+fill: oklch(31.05% 0.0177 341.48); }
+
+[data-theme="dark"] .index-tape {
+fill: oklch(15.43% 0.0066 338.10); }
+
+[data-theme="dark"] .index-display-screen {
+fill: oklch(79.35% 0.0193 342.15); }
+
+[data-theme="dark"] .index-display-shadow {
+fill: oklch(31.05% 0.0177 341.48); }
+
+[data-theme="dark"] .index-knob-light {
+fill: oklch(44.97% 0.0293 341.12); }
+
+[data-theme="dark"] .index-knob-mid {
+fill: oklch(35.76% 0.0225 340.86); }
+
+[data-theme="dark"] .index-knob-dot {
+fill: oklch(100.00% 0.0000 89.88); }
+
+[data-theme="dark"] .index-reel-left-dark {
+fill: oklch(87.55% 0.0119 342.68); }
+
+[data-theme="dark"] .index-reel-left-light {
+fill: oklch(79.35% 0.0193 342.15); }
+
+[data-theme="dark"] .index-reel-right-dark {
+fill: oklch(79.35% 0.0193 342.15); }
+
+[data-theme="dark"] .index-reel-right-light {
+fill: oklch(87.55% 0.0119 342.68); }
+
+[data-theme="dark"] .index-player-buttons button {
+background-color: oklch(82.41% 0.0052 345.31);
+box-shadow: 0 2px 0 oklch(31.05% 0.0177 341.48); }
+
+[data-theme="dark"] .index-player-buttons button:hover {
+background-color: oklch(95.38% 0.0118 239.91); }
+
+[data-theme="dark"] .index-player-buttons button[aria-pressed="true"] {
+background-color: oklch(58.45% 0.1486 19.33);
+box-shadow: 0 -2px 0 oklch(46.47% 0.1168 17.95);
+color: var(--color-text-alt); }
+
+@keyframes spin-reel {
+to {
+transform: rotate(360deg); } }
+
+@keyframes spin-knob {
+to {
+transform: rotate(360deg); } }
+
+@keyframes tape-left-transfer {
+from {
+transform: scale(1); }
+
+to {
+transform: scale(0.1); } }
+
+@keyframes tape-right-transfer {
+from {
+transform: scale(0.1); }
+
+to {
+transform: scale(1); } }
+
+@keyframes blink-display {
+0%, 48%, 100% {
+opacity: 1; }
+
+49%, 52% {
+opacity: 0; } }
+
+@keyframes pulse-index-easter-egg {
+0%, 100% {
+fill: oklch(58.49% 0.1788 38.20); }
+
+50% {
+fill: oklch(100.00% 0.0000 89.88); } }
+
+@media screen and (min-width: 64em) {
+#index-player-controls {
+bottom: var(--spacing-m);
+left: 100px; }
+
+.index-player-buttons button {
+box-shadow: 0 5px 0 oklch(40.88% 0.0586 222.58);
+padding: 10px 20px; }
+
+.index-player-buttons button[aria-pressed="true"] {
+background-color: oklch(58.45% 0.1486 19.33);
+box-shadow: 0 -5px 0 oklch(46.47% 0.1168 17.95); } }

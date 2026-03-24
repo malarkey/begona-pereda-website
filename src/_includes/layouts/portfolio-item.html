@@ -1,0 +1,90 @@
+{% set assetHash = global.random() %}
+{% set relatedPortfolio = helpers.getSiblingContent(collections.portfolioItems, page, 3, false) %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "partials/head.html" %}
+
+<body id="{{ site.siteID }}">
+
+<div class="layout" data-layout="edinburgh" data-theme="reversed">
+
+<div>
+
+<div class="alt-intro">
+
+<nav>
+<ul>
+{% for item in navigation.items %}
+<li><a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+{% endfor %}
+</ul>
+</nav>
+
+<div id="banner-logo">
+<a href="/" aria-label="{{ site.name }}" title="Home">{% include "partials/logo-banner.svg" %}<span data-visibility="hidden">{{ site.name }}</span></a>
+</div><!-- banner-logo -->
+
+<div class="portfolio-content">
+
+<h1 style="font-family: {{ typeface }}">{{ title }}</h1>
+
+{% if summary %}
+<p>{{ summary }}</p>
+{% endif %}
+
+<small><b>{{ year }}</b>{% if service %} • {{ service }}{% endif %}</small>
+
+</div><!-- portfolio-content -->
+
+</div><!-- intro -->
+
+</div><!-- one -->
+
+
+<div>
+
+<div class="portfolio-player">
+
+{% if audioFile %}
+<button class="portfolio-cassette-toggle" type="button" aria-label="Play or pause {{ title }}">
+{% include "partials/img-cassette.svg" %}
+</button>
+{% else %}
+{% include "partials/img-cassette.svg" %}
+{% endif %}
+
+{% if audioFile %}
+<br>
+<audio controls preload="none" src="{{ audioFile }}">
+<p>Your browser does not support the audio element.</p>
+</audio>
+{% endif %}
+
+</div><!-- portfolio-player -->
+
+</div><!-- two -->
+
+</div><!-- layout -->
+
+{% if relatedPortfolio.length %}
+
+<h2 data-align-h="center" data-size="2xl">Recent work</h2>
+
+<div class="layout" data-layout="vienna">
+{% include "partials/portfolio-recent-list.html" %}
+</div><!-- layout -->
+
+{% endif %}
+
+
+
+<div data-bg="footer-stripe-v">
+{% include "partials/footer.html" %}
+</div><!-- data-bg -->
+
+<script src="{{ site.url }}/js/scripts.js"></script>
+</body>
+
+</html>
