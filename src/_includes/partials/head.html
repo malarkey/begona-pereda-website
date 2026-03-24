@@ -22,18 +22,18 @@
 {% if features.portfolio %}
 <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/portfolio/feed.xml" />
 {% endif %}
-<link rel="stylesheet" href="{{ site.url }}/css/critical.css">
+<link rel="stylesheet" href="{{ site.assetPath }}/css/critical.css">
 {% if features.blog %}
-<link rel="stylesheet" href="{{ site.url }}/css/blog.css">
+<link rel="stylesheet" href="{{ site.assetPath }}/css/blog.css">
 {% endif %}
 {% if features.portfolio %}
-<link rel="stylesheet" href="{{ site.url }}/css/portfolio.css">
+<link rel="stylesheet" href="{{ site.assetPath }}/css/portfolio.css">
 {% endif %}
 {% if page.url == "/" %}
-<link rel="stylesheet" href="{{ site.url }}/css/home.css">
+<link rel="stylesheet" href="{{ site.assetPath }}/css/home.css">
 {% endif %}
 {% if page.url == "/about/" %}
-<link rel="stylesheet" href="{{ site.url }}/css/about.css">
+<link rel="stylesheet" href="{{ site.assetPath }}/css/about.css">
 {% endif %}
 
 </head>

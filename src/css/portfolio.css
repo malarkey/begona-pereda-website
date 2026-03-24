@@ -50,10 +50,11 @@ font-weight: normal;
 src: url('/fonts/over-the-rainbow.woff2') format('woff2'); }
 
 .item-portfolio {
-border-block-end: var(--border-width-l) solid var(--color-border);
 margin-block-end: var(--spacing-l);
-padding-block-end: var(--spacing-r);
 text-align: center; }
+
+[data-variant="recent"] .item-portfolio {
+padding-inline: var(--spacing-r); }
 
 .item-portfolio .work-disk {
 transform-box: fill-box;
@@ -157,3 +158,10 @@ transform: rotate(2880deg); } }
 @keyframes shift-cassette-tape {
 to {
 transform: translateX(-200px); } }
+
+@media screen and (min-width: 64em) {
+
+[data-variant="recent"] .item-portfolio {
+padding-inline: var(--spacing-l); }
+}
+
