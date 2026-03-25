@@ -18,17 +18,17 @@ clients:
     text: Music for commercials and branded content, crafted to align with each project’s tone and identity.
 reelTracks:
   - label: "1"
-    audioFile: "/audio/tmp-audio-1.mp3"
+    audioFile: "/audio/ropukas-lofi-eats-to-cut-grass-to.mp3"
   - label: "2"
-    audioFile: "/audio/tmp-audio-2.mp3"
+    audioFile: "/audio/playful-morning.mp3"
   - label: "3"
-    audioFile: "/audio/tmp-audio-3.mp3"
+    audioFile: "/audio/sometimes-you-just-have-to-make-a-good-mistake.mp3"
   - label: "4"
-    audioFile: "/audio/tmp-audio-4.mp3"
+    audioFile: "/audio/tinkering.mp3"
   - label: "5"
-    audioFile: "/audio/tmp-audio-5.mp3"
+    audioFile: "/audio/easy-motion.mp3"
   - label: "6"
-    audioFile: "/audio/tmp-audio-6.mp3"
+    audioFile: "/audio/4am-and-ropuka-is-still-snipping-at-the-grass.mp3"
 ---
 
 <p>Is a composer and producer creating music for video games, film, and advertising.</p>

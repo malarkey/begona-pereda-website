@@ -1,5 +1,5 @@
 {% set assetHash = global.random() %}
-{% set archivePageSize = paginationSize or 6 %}
+{% set archivePageSize = paginationSize or 9 %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,7 +85,7 @@
   const previousButton = browser.querySelector("[data-page-action='previous']");
   const nextButton = browser.querySelector("[data-page-action='next']");
   const results = browser.querySelector("[data-portfolio-results]");
-  const pageSize = Number(browser.getAttribute("data-page-size")) || 6;
+  const pageSize = Number(browser.getAttribute("data-page-size")) || 9;
   let activeFilter = "all";
   let currentPage = 1;
 
