@@ -544,6 +544,8 @@ top: 0; }
 .icon-base {
 fill: var(--color-brand); }
 
+.reelcrafter {
+padding: var(--spacing-l); }
 
 /* ==========================================================================
 FORM COMPONENTS
@@ -875,6 +877,12 @@ margin-inline: auto;
 max-inline-size: 320px;
 padding-block: var(--spacing-m); }
 
+.alt-intro .btn {
+display: block;
+margin-block: var(--spacing-r);
+margin-inline: auto;
+background-color: var(--color-base); }
+
 .intro-content p {
 font-family: var(--font-family-alt);
 font-size: var(--font-size-m);
@@ -947,6 +955,9 @@ background-image: url(../images/bg-stripes-v.svg);
 background-position: 50% 0;
 background-repeat: no-repeat;
 background-size: 250px auto; }
+
+[data-bg="content-stripe-v"] .alt-intro {
+padding-block-end: var(--spacing-r); }
 
 [data-bg="footer-stripe-c"] {
 background-image: url(../images/bg-stripes-v.svg);
@@ -1063,8 +1074,7 @@ background-repeat: repeat-y;
 background-size: 320px auto; }
 
 [data-bg="content-stripe-v"] .alt-intro {
-background-color: var(--color-background-default);
-padding-block-end: var(--spacing-r); }
+background-color: var(--color-background-default); }
 
 [data-bg="footer-stripe-c"] {
 background-image: url(../images/bg-stripes-c.svg);

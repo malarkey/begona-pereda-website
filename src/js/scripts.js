@@ -4,6 +4,7 @@ const indexPlayerAudio = document.querySelector("#index-player-audio");
 const indexTrackButtons = Array.from(document.querySelectorAll("[data-reel-track]"));
 const indexTrackData = document.querySelector("#index-player-track-data");
 const indexEasterEgg = document.querySelector(".index-easter-egg");
+const bannerLogo = document.querySelector("#banner-logo");
 
 const applyThemePreference = (theme) => {
 if (theme === "dark") {
@@ -90,6 +91,10 @@ const activeTrackIndex = indexPlayerAudio.getAttribute("data-track-index");
 
 indexPlayer.classList.toggle("is-playing", isPlaying);
 
+if (bannerLogo) {
+bannerLogo.classList.toggle("is-playing", isPlaying);
+}
+
 indexTrackButtons.forEach((button) => {
 const isActive = button.getAttribute("data-track-index") === activeTrackIndex && isPlaying;
 button.setAttribute("aria-pressed", String(isActive));
@@ -152,7 +157,6 @@ syncIndexPlayer();
 const portfolioCassette = document.querySelector(".portfolio-cassette");
 const portfolioAudio = document.querySelector("audio");
 const portfolioCassetteToggle = document.querySelector(".portfolio-cassette-toggle");
-const bannerLogo = document.querySelector("#banner-logo");
 
 if (portfolioCassette && portfolioAudio) {
 const syncCassettePlayback = () => {
