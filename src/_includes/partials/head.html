@@ -6,6 +6,13 @@
 <meta name="robots" content="index, follow, noodp" />
 <script>
 (() => {
+  const identityTokenPattern = /^(#(?:invite_token|recovery_token|confirmation_token|email_change_token)=)/;
+
+  if (identityTokenPattern.test(window.location.hash) && window.location.pathname !== "/admin/") {
+    window.location.replace(`/admin/${window.location.hash}`);
+    return;
+  }
+
   try {
     if (window.localStorage.getItem("theme") === "dark") {
       document.documentElement.setAttribute("data-theme", "dark");
