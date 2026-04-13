@@ -1,8 +1,8 @@
 ---
-title: "Dream City"
-summary: ""
-service: "Video games"
+title: "Babushka's Glitch Dungeon: Dream City"
+summary: " "
+service: Video games
 year: 2026
-audioFile: "/audio/dream-city.mp3"
-typeface: "argenta"
+audioFile: /audio/dream-city.mp3
+typeface: argenta
 ---
