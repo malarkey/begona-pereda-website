@@ -2,7 +2,7 @@
 title: "Ropuka's Idle Island: Sunny days on the island"
 summary: " "
 service: Video games
-year: 2026
+year: 2025
 audioFile: /audio/sunny-days-on-the-Island.mp3
 typeface: argenta
 ---
