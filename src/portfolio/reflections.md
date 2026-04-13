@@ -2,7 +2,7 @@
 title: Reflections Sound Installation
 summary: " "
 service: Sound installation
-year: 2026
+year: 2024
 audioFile: /audio/reflections-sound-installation.mp3
 typeface: argenta
 ---
