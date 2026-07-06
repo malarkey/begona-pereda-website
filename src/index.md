@@ -2,7 +2,7 @@
 layout: layouts/home.html
 title: Begoña Pereda
 metaDesc: Begoña Pereda is a Mexico City–based producer and composer creating
-  music for video games.
+  music for media.
 services:
   - title: Music composition and production
     text: Original music for video games, film, and advertising. I create
