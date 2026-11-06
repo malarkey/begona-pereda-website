@@ -50,6 +50,7 @@
 --color-button-background: oklch(26.23% 0.0132 353.48);
 --color-button-text: var(--color-text-alt);
 --color-input-background: var(--color-background-default);
+color-scheme: only light;
 
 /*
 * BORDER SYSTEM
